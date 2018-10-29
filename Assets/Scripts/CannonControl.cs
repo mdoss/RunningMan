@@ -38,7 +38,7 @@ public class CannonControl : MonoBehaviour {
 				time = 0;
 				seconds = rnd.Next(4, 10);
 				objSpeed = rnd.Next(15, 50);
-            prefabIndex = rnd.Next(0, objs.Length );
+            prefabIndex = rnd.Next(1, objs.Length );
             //Debug.Log(seconds);cccccccccccccccccccccccc
             //prefabIndex = 2;
 				var obj = (GameObject)Instantiate

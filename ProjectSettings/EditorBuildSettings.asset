@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/prinsonb.unity
     guid: 2d51680ccba454357bd7b64cd05a9d38
+  - enabled: 1
+    path: Assets/Scenes/YouWin.unity
+    guid: 5772a50517161e7479716916a64e0337
   m_configObjects: {}

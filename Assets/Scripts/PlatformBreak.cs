@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlatformBreak : MonoBehaviour {
-
+    
+    bool isDestroyed = false;
     private Rigidbody rb;
     // Use this for initialization
     void Start()
@@ -14,10 +15,13 @@ public class PlatformBreak : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (rb.position.y < 50f)
+
+        if (rb.position.y < 50f && !isDestroyed)
         {
-            //Debug.Log("destroying");
+            //Debug.Log(ScoreManager.score);
+            ScoreManager.score = ScoreManager.score + 1;
             Destroy(gameObject, 5);
+            isDestroyed = true;
         }
 
     }

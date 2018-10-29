@@ -29,7 +29,6 @@ public class CameraController : MonoBehaviour {
         //transform.LookAt(target, Vector3.up);
         transform.position = target.position + offset;
 
-        /* Camera rotation */
         rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * rotationSpeed;
         rotationY += Input.GetAxis("Mouse Y") * rotationSpeed;
         rotationY = Mathf.Clamp(rotationY, minY, maxY);

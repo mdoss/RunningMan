@@ -5,6 +5,7 @@ SceneListBegin?
 Assets/Scenes/Main Menu.unity
 Assets/Scenes/GameOver.unity
 Assets/Scenes/prinsonb.unity
+Assets/Scenes/YouWin.unity
 SceneListEnd?
 4206c110c99e43920bbd36a379dec799 ProBuilderCore-Unity5.dll:ProBuilder2.Common.pb_PreferenceDictionary
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -129,10 +130,8 @@ dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 96f3ea9f23b6f08e60710ebb4af49174 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.PlatformBreak
 f16835701e71dd5d6fb1fed4b7aff1d8 Unity.TextMeshPro.dll:TMPro.TMP_Asset
-9e7d6674455632613016384542517ca7 Assembly-CSharp.dll:.ColumnBreakScript
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:ProBuilder2.Examples.HueCube
 486cd95c82d8305219c352c06b776e1f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
-486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ObjectBreak
 a1e5605df5fc312cd7fcda41144723ea Assembly-CSharp.dll:.MouseLook
 eaf0bcdb10d442a4029d615f41d09957 Unity.TextMeshPro.dll:TMPro.TextContainer
 01003a33f9d5b26569edcc070b48d211 Assembly-CSharp.dll:.CannonControl
@@ -182,6 +181,7 @@ e1ea12ca952c81d81a9a21fdf34446ed UnityEngine.HoloLens.dll:UnityEngine.EventSyste
 dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 e3cd80f2eb93cafd6b7bb6efeb62a6d7 Assembly-CSharp.dll:ProBuilder2.Examples.CameraControls
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.LevelManager
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.PillarBreak
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 3c141f10cc3bef779c742662d79dc466 Assembly-CSharp.dll:.PlayerController
@@ -190,5 +190,4 @@ e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 c0230079978996b923b325c90d4b672a Assembly-CSharp.dll:ProBuilder2.Examples.RuntimeEdit
-486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.Menu
-486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.LevelManager
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ScoreManager
