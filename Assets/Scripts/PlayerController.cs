@@ -50,6 +50,21 @@ public float speed = 10.0f;
 	            rigidbody.velocity = new Vector3(velocity.x, CalculateJumpVerticalSpeed(), velocity.z);
 	        }
 	    }
+        else //slow in air movement
+        {
+            // Calculate how fast we should be moving
+            Vector3 targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            targetVelocity = transform.TransformDirection(targetVelocity);
+            targetVelocity *= speed;
+
+            // Apply a force that attempts to reach our target velocity
+            Vector3 velocity = rigidbody.velocity;
+            Vector3 velocityChange = (targetVelocity - velocity);
+            velocityChange.x = Mathf.Clamp(velocityChange.x *.05f, -maxVelocityChange * .05f, maxVelocityChange * .05f);
+            velocityChange.z = Mathf.Clamp(velocityChange.z * .05f, -maxVelocityChange * .05f, maxVelocityChange * .05f);
+            velocityChange.y = 0;
+            rigidbody.AddForce(velocityChange , ForceMode.VelocityChange);
+        }
  
 	    // We apply gravity manually for more tuning control
 	    rigidbody.AddForce(new Vector3 (0, -gravity * rigidbody.mass, 0));

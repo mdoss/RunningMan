@@ -30,7 +30,6 @@ public class CannonControl : MonoBehaviour {
 	void Update () {
 		int prefabIndex = 0;
 		transform.rotation = Quaternion.Euler(maxRotationX * Mathf.Sin(Time.time * xSpeed), startingYPos + maxRotationY * Mathf.Sin(Time.time * ySpeed), 0f);
-		//Debug.Log(startingYPos);
 		time += Time.deltaTime;
 		
 		if(time > seconds)

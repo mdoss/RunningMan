@@ -16,17 +16,6 @@ public class CameraController : MonoBehaviour {
     }
      
     void LateUpdate() {
-        /*   float horizontal = Input.GetAxis("Mouse X") * rotateSpeed;
-           target.transform.Rotate(0, horizontal, 0);
-
-
-           float desiredAngle = target.transform.eulerAngles.y;
-           Quaternion rotation = Quaternion.Euler(0, desiredAngle, 0);
-           transform.position = target.transform.position - (rotation * offset);
-
-           transform.LookAt(target.transform);*/
-        /* Camera follows the target */
-        //transform.LookAt(target, Vector3.up);
         transform.position = target.position + offset;
 
         rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * rotationSpeed;
